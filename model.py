@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image
 
 # Loading model
-model = load_model("D:\\College_Work\\Semester-6\\SQ-III\\Assignments\\2\\Assignment02-SoftwareQuality\\digit_model.h5")
+model = load_model("digit_model.h5")
 
 
 # Preparing and pre-processing the image

@@ -4,4 +4,4 @@ Pillow==9.3.0
 tensorflow==2.10.0
 keras==2.10.0
 pylint==2.14.0
-pytest==7.1.2   
+pytest==7.1.2
