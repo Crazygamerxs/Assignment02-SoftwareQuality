@@ -16,15 +16,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m venv venv
-          .\venv\Scripts\activate
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Run pylint
         run: |
-          .\venv\Scripts\activate
-          pylint app.py model.py test_basic.py
+          pylint app.py model.py tests/test_basic.py
 
   test:
     runs-on: windows-latest
@@ -40,8 +37,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m venv venv
-          .\venv\Scripts\activate
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
