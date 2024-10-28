@@ -1,0 +1,33 @@
+[MASTER]
+# Set the number of jobs to run linting in parallel
+jobs=1
+
+# Define directories or files to ignore
+ignore=venv, migrations, tests
+
+[MESSAGES CONTROL]
+# Disable messages you might find unnecessary (e.g., for TensorFlow, Flask, etc.)
+disable=
+    missing-module-docstring,
+    missing-class-docstring,
+    missing-function-docstring,
+    too-few-public-methods,
+    too-many-arguments,
+    too-many-locals
+
+[FORMAT]
+# Configure the line length to match common practice in Python
+max-line-length=100
+
+[BASIC]
+# Good to have at least minimal docstrings for clarity in production code
+good-names=i,j,k,ex,run,_,df
+
+[LOGGING]
+# Customize logging format to Flask
+logging-modules=logging,flask.logging
+
+[DESIGN]
+# Limit the number of parameters or variables per function (adjust as needed)
+max-args=10
+max-locals=15
